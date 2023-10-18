@@ -98,7 +98,7 @@ input[type="placeholder"]{
     font-size: 18px;
 }
 
-@media (max-widht=650px) {
+@media screen  and (max-width:750px) {
     .container{
         width: 100%;
         display: flex;
