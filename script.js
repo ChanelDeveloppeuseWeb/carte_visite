@@ -29,7 +29,7 @@ function validateForm() {
     "proffesion: " + etudiants.proffesion;
   document.querySelector("#date").innerHTML = "date: " + etudiants.date;
   document.querySelector("#age").innerHTML = "age: " + etudiants.age;
-  document.querySelector("#image").innerHTML = "photo:" + etudiants.photo
+  document.querySelector("#image").innerHTML = "photo:" + etudiants.photo;
 
   console.log(
     etudiants.nom,
@@ -38,12 +38,14 @@ function validateForm() {
     etudiants.photo,
     etudiants.date
   );
-  render.onload = function (e) {
-    console.log(e.target);
-    render.readAsDataURL(image);
-  };
+  render.onload = function () {
+    console.log("htud")
 
-  document.getElementById("Photo").src = render;
+    document.getElementById("image").src = render.result;
+  }
+  
+  render.readAsDataURL(image);
+  console.log("1 htud")
 }
 
 function resetForm() {
