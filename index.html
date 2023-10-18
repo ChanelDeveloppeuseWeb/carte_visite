@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>veuillez remplir ces informations</h1>
+            <input type="text" id="Nom" placeholder="nom" required="nom">
+            <input type="text" id="Proffession" placeholder="Proffession" required="proffession">
+            <input type="date" id="Date" placeholder="Date de naissnace" required="date naissnace">
+            <input type="number" id="Age" placeholder="age" required="nom">
+            <input type="file" id="Photo" required="nom">
+            <br><br>
+            <button id="button">Send</button>
+        </div>
+        <div id="content" style="display: none;">
+            <div class="item">
+                <h1 id="nom">Nom:</h1>
+            </div>
+            <div class="item">
+                <h1 id="proffesion">Proffesion:</h1>
+            </div>
+            <div class="item">
+                <h1 id="date">Date de Naissance:</h1>
+            </div>
+            <div class="item">
+                <h1 id="age">age:</h1>
+            </div>
+            <div class="item">
+                <img src="" alt="" id="image" class="image">
+            </div>
+            <button id="reset" value="reinitialiser">Reset</button>
+            
+        </div>
+    </div>
+</body>
+</html>
