@@ -43,7 +43,7 @@ function validateForm() {
     render.readAsDataURL(image);
   };
 
-  document.getElementById("photo").src = render;
+  document.getElementById("Photo").src = render;
 }
 
 function resetForm() {
