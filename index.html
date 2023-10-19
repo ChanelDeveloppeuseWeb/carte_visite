@@ -10,14 +10,16 @@
 <body>
     <div class="container">
         <div class="content">
-            <h1>veuillez remplir ces informations</h1>
-            <input type="text" id="Nom" placeholder="nom" required="nom">
-            <input type="text" id="Proffession" placeholder="Proffession" required="proffession">
-            <input type="date" id="Date" placeholder="Date" required="date naissnace">
-            <input type="number" id="Age" placeholder="age" required="nom">
-            <input type="file" id="Photo" required="nom">
-            <br><br>
-            <button id="button">Send</button>
+            <form onsubmit="event.preventDefault(); validateForm()">
+                <h1>veuillez remplir ces informations</h1>
+                <input type="text" value="sdfgs" id="Nom" placeholder="nom" required>
+                <input type="text" value="sdfgs" id="Proffession" placeholder="Proffession" required>
+                <input type="date" value="12/05/2024" id="Date" placeholder="Date" required>
+                <input type="number" value="8" id="Age" placeholder="age" required>
+                <input type="file" value="sdfgs"x id="Photo" required>
+                <br><br>
+                <button type ="submit" id="button">Send</button>
+            </form>
         </div>
         <div id="content" style="display: none;">
             <div class="item">

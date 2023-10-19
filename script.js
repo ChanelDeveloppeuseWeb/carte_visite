@@ -10,7 +10,6 @@ let etudiants = {
 
 function validateForm() {
   // je recupere les donnees du formulaire
-
   etudiants.nom = document.getElementById("Nom").value;
   etudiants.proffesion = document.getElementById("Proffession").value;
   etudiants.date = document.getElementById("Date").value;
@@ -30,7 +29,6 @@ function validateForm() {
   document.querySelector("#date").innerHTML = "date: " + etudiants.date;
   document.querySelector("#age").innerHTML = "age: " + etudiants.age;
   document.querySelector("#image").innerHTML = "photo:" + etudiants.photo;
-
   console.log(
     etudiants.nom,
     etudiants.proffesion,
@@ -39,13 +37,14 @@ function validateForm() {
     etudiants.date
   );
   render.onload = function () {
-    console.log("htud")
+    // console.log("htud")
 
     document.getElementById("image").src = render.result;
   }
   
   render.readAsDataURL(image);
-  console.log("1 htud")
+ 
+  // console.log("1 htud")
 }
 
 function resetForm() {
@@ -59,7 +58,8 @@ function resetForm() {
 }
 
 let btn = document.querySelector("#button");
-btn.addEventListener("click", validateForm);
+btn.addEventListener('submit',validateForm);
+
 
 let btnReset = document.querySelector("#reset");
-btnReset.addEventListener("click", resetForm);
+btnReset.addEventListener("click",resetForm);
