@@ -97,10 +97,6 @@ font-size: 20px;
 input[type="placeholder"]{
     font-size: 18px;
 }
-#Photo{
-    width: 20% !important;
-    height: 50px;
-}
 label{
     font-size: 12px;
     opacity: 0.5;
