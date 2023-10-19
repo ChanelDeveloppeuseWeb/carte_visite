@@ -15,6 +15,7 @@ function validateForm() {
   etudiants.date = document.getElementById("Date").value;
   etudiants.age = document.getElementById("Age").value;
   etudiants.photo = document.getElementById("Photo").value;
+  
 
   let image = document.getElementById("Photo").files[0];
   let render = new FileReader();
