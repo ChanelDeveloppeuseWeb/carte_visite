@@ -119,4 +119,8 @@ input[type="placeholder"]{
         margin: auto;
         height: auto;
     }
+    button{
+        width: 50%;
+        
+    }
 }
