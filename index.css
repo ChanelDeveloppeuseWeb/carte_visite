@@ -9,11 +9,12 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: auto;
+
 
 }
 #content{
-    width: 30%;
-    margin: auto;
+    width: 20%;
     background-color: #fff;
     padding: 50px;
     border-radius: 5px;
@@ -102,6 +103,11 @@ label{
     opacity: 0.5;
     margin-top: 20px;
     margin-left: 12px;
+}
+
+.item img{
+width: 100px;
+height: 100px;
 }
 
 @media screen  and (max-width:750px) {

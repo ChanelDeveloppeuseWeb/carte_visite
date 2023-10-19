@@ -24,12 +24,12 @@ function validateForm() {
   document.querySelector("#content").style.display = "block";
 
   // j affiche mes donnees
-  document.querySelector("#nom").innerHTML = "nom: " + etudiants.nom;
+  document.querySelector("#nom").innerHTML = "Nom: " + etudiants.nom;
   document.querySelector("#proffesion").innerHTML =
-    "proffesion: " + etudiants.proffesion;
-  document.querySelector("#date").innerHTML = "date: " + etudiants.date;
-  document.querySelector("#age").innerHTML = "age: " + etudiants.age;
-  document.querySelector("#image").innerHTML = "photo:" + etudiants.photo;
+    "Proffesion: " + etudiants.proffesion;
+  document.querySelector("#date").innerHTML = "Date de naissance: " + etudiants.date;
+  document.querySelector("#age").innerHTML = "Age: " + etudiants.age + "ans";
+  document.querySelector("#image").innerHTML = "Photo:" + etudiants.photo;
   console.log(
     etudiants.nom,
     etudiants.proffesion,
